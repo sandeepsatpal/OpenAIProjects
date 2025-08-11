@@ -48,3 +48,20 @@ This projects gives you glimpse of all the state of the art and latest methodolo
   </tbody>
 </table>
 
+<h2> Below few python and javascript modules are sample demostration of the use case of OpenAI as per different requirements</h2>
+
+<ul>
+  <li> <b> Access OpenAI model in Javascript </b> </li>
+  <table>
+    <tr>
+      <td>
+One of the most common uses of OpenAI is powering chat assistants on websites. Many platforms rely on OpenAI models to deliver intelligent, conversational support to users. The sample JavaScript code below can be easily integrated into your custom chat interface to enable seamless OpenAI-powered interactions.
+      </td>
+      </tr>
+    <tr>
+      <td>
+        <i>AzureOpenAIInJavascript.html</i>
+      </td>
+    </tr>
+  </table>
+</ul>
