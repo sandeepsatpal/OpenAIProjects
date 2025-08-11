@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Azure OpenAI Chat Demo</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    #response { margin-top: 20px; white-space: pre-wrap; }
+  </style>
+</head>
+<body>
+  <h1>Chat with Azure OpenAI</h1>
+  <textarea id="userInput" rows="4" cols="50" placeholder="Type your message here..."></textarea><br>
+  <button onclick="sendMessage()">Send</button>
+  <div id="response"></div>
+
+  <script>
+    async function sendMessage() {
+      const input = document.getElementById('userInput').value;
+      const responseDiv = document.getElementById('response');
+      responseDiv.textContent = "Thinking...";
+
+      const endpoint = "https://openaiprojects.openai.azure.com/openai/deployments/gpt-4.1/chat/completions?api-version=2025-01-01-preview";
+      const apiKey = "API_KEY";
+
+      const data = {
+        messages: [{ role: "user", content: input }],
+        temperature: 0.7,
+        max_tokens: 1000
+      };
+
+      try {
+        const response = await fetch(endpoint, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "api-key": apiKey
+          },
+          body: JSON.stringify(data)
+        });
+
+        const result = await response.json();
+
+        if (result.choices && result.choices.length > 0 && result.choices[0].message) {
+          responseDiv.textContent = result.choices[0].message.content;
+        } else if (result.error) {
+          responseDiv.textContent = "Error: " + result.error.message;
+        } else {
+          responseDiv.textContent = "Unexpected response format.";
+          console.error("Unexpected response:", result);
+        }
+      } catch (error) {
+        responseDiv.textContent = "Fetch error: " + error.message;
+        console.error("Fetch error:", error);
+      }
+    }
+  </script>
+</body>
+</html>
