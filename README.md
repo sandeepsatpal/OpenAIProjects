@@ -64,4 +64,18 @@ One of the most common uses of OpenAI is powering chat assistants on websites. M
       </td>
     </tr>
   </table>
+  <li> <b> Access OpenAI model in Python </b> </li>
+  <table>
+    <tr>
+      <td>
+Python offers one of the most seamless ways to interact with OpenAI’s powerful language models. With the official OpenAI Python library, developers can easily integrate capabilities like text generation, summarization, and code assistance into their applications. The SDK handles authentication, request formatting, and response parsing, making it ideal for rapid prototyping and production-ready AI features. Whether you're building a chatbot, automating content creation, or enhancing data workflows, Python provides the flexibility and simplicity to unlock OpenAI’s full potential.
+        Below Python code demostrate how to integrate OpenAI model for Chat scenario
+      </td>
+      </tr>
+    <tr>
+      <td>
+        <i>AzureOpenAISamplecode.py</i>
+      </td>
+    </tr>
+  </table>
 </ul>
