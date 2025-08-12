@@ -78,4 +78,18 @@ Python offers one of the most seamless ways to interact with OpenAI’s powerful
       </td>
     </tr>
   </table>
+  <li> <b> Access Azure OpenAI model using LangChain framework in Python </b> </li>
+  <table>
+    <tr>
+      <td>
+LangChain provides robust support for integrating Azure-hosted GPT models, enabling developers to harness the power of OpenAI’s language models within Microsoft’s secure cloud infrastructure. By leveraging the langchain-azure-ai extension, users can seamlessly connect to Azure OpenAI endpoints and deploy models like GPT-3.5 and GPT-4 for chat completions, embeddings, and more.
+        Below Python code demostrate how to use Azure GPT model using Langchain APIs
+      </td>
+      </tr>
+    <tr>
+      <td>
+        <i>AzureOpenAIThroughLangChainSample.py</i>
+      </td>
+    </tr>
+  </table>
 </ul>
