@@ -99,7 +99,7 @@ LangChain provides robust support for integrating Azure-hosted GPT models, enabl
         Cutomizing Chat GPT model for your private data/websites is one of the most popular requirements many companies are looking for. </br>
         You can unlock the full potential of conversational AI by customizing ChatGPT with your private data and website content using the Retrieval-Augmented Generation (RAG) approach. </br>  
         Retrieval-Augmented Generation (RAG) is a powerful framework that enhances the capabilities of language models by integrating external knowledge retrieval into the generation process. Instead of relying solely on pre-trained data, RAG dynamically fetches relevant documents from internal or external sources and incorporates them into the model’s prompt. This approach enables more accurate, context-aware, and up-to-date responses. </br>
-        To build end to end chat solution on your private data in Azure infrastructure, you need to follow three major steps
+        To build end to end chat solution on your private data in Azure infrastructure, you need to follow two major steps
       </td>
       </tr>
     <tr>
@@ -109,7 +109,8 @@ LangChain provides robust support for integrating Azure-hosted GPT models, enabl
     </tr>
     <tr>
       <td>
-        TBD
+        In Azure AI Foundary, you can add the data source using different methods. One of the easiest method is to create a storage blob container, upload all the files and connect it with Azure search service. </br>
+        Once search service is ready, you can create search index on top of it and add it as a data source in the GPT model.
       </td>
     </tr>
     <tr>
