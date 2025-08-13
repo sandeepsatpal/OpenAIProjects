@@ -92,4 +92,41 @@ LangChain provides robust support for integrating Azure-hosted GPT models, enabl
       </td>
     </tr>
   </table>
+  <li> <b> Customize Chat GPT model on your Private data/websites using RAG approach </b> </li>
+  <table>
+    <tr>
+      <td>
+        Cutomizing Chat GPT model for your private data/websites is one of the most popular requirements many companies are looking for. </br>
+        You can unlock the full potential of conversational AI by customizing ChatGPT with your private data and website content using the Retrieval-Augmented Generation (RAG) approach. </br>  
+        Retrieval-Augmented Generation (RAG) is a powerful framework that enhances the capabilities of language models by integrating external knowledge retrieval into the generation process. Instead of relying solely on pre-trained data, RAG dynamically fetches relevant documents from internal or external sources and incorporates them into the model’s prompt. This approach enables more accurate, context-aware, and up-to-date responses. </br>
+        To build end to end chat solution on your private data in Azure infrastructure, you need to follow three major steps
+      </td>
+      </tr>
+    <tr>
+      <td>
+        <b> Step 1: Design and Build Azure AI Search Index </b>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        TBD
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b> Step 2: Integrate with Chat Model </b>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Below python module demostrate how to integrate chat GPT model which uses azure search index to customize the response on your content. </br>
+        Major difference in standard approach and this approach is, you need to provide search_endpoint, search_key and search_index as well.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <i> AzureOpenAIRAGForPrivateData.py </i>
+      </td>
+    </tr>
+  </table>
 </ul>
