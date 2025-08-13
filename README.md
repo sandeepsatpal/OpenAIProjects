@@ -130,4 +130,48 @@ LangChain provides robust support for integrating Azure-hosted GPT models, enabl
       </td>
     </tr>
   </table>
+  <li> <b> Miscellaneous Python modules related to GPT models </b> </li>
+  <table>
+    <tr>
+      <td>
+        <b> Create JSONL chunks data from big files </b> </br>
+        To user your private data either for RAG or for fine-tuning GPT model, you need to divide your entire data into chunks. </br>
+        Although, Azure AI index can automatically chunks your data, sometimes you would like to divide on your own. </br>
+        Below python modules can take a file and split it into chunks and convert them into JSONL format which is needed by GPT models.
+      </td>
+      </tr>
+    <tr>
+      <td>
+        <i>CreateJsonLFromDocument.py</i>
+      </td>
+    </tr>
+  </table>
+  <table>
+    <tr>
+      <td>
+        <b> Upload Training and Validataion JSONL files to Azure AI Foundary </b> </br>
+        Once your training and validation JSONL files are ready, you can either upload them via Azure AI foundary portal, or use below python module to upload them. 
+      </td>
+      </tr>
+    <tr>
+      <td>
+        <i>UploadJsonLForFineTuning.py</i>
+      </td>
+    </tr>
+  </table>
+    <table>
+    <tr>
+      <td>
+        <b> Fine tune GPT models on your data </b> </br>
+        Although, RAG is the most suited method to create chat assistant on your own data, fine tuning is another method where you update the GPT model itself on your data. </br>
+        Below python module can train and fine-tune existing GPT models on you training and validation set. </br>
+        Fine-tuning is a longer process. Same module can also be used to check the status of fine-tuning. 
+      </td>
+      </tr>
+    <tr>
+      <td>
+        <i>FineTuningAzureOpenAI.py</i>
+      </td>
+    </tr>
+  </table>
 </ul>
